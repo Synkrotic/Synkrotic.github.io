@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WikiNow</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="bg"></div>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="act-drop">
+                        <div class="searchbarbox">
+                            <input aria-label="search" placeholder="Zoek hier..." type="search" name="searchbar" id="searchbarinput">
+                            <button onclick="search()"  id="src-btn">Zoeken</button>
+                        </div>
+                    </div>
+                    <div class="linksbox">
+                        <p id="recommended"> ~ ~ <b>Aanbevolen</b> ~ ~ </p>
+                        <ul id="recommendedlist">
+                            <li class="animated"><a href="">Page 1</a></li>
+                            <li class="animated"><a href="">Page 2</a></li>
+                            <li class="animated"><a href="">Page 3</a></li>
+                            <li class="animated"><a href="">Page 4</a></li>
+                            <li class="animated"><a href="">Page 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
