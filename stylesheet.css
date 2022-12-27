@@ -1,0 +1,147 @@
+/* Main setup */
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    position: relative;
+    color: black;
+    box-sizing: border-box;
+    color: paleturquoise;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#bg {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.3), rgba(128, 0, 128, 0.3)), url('Files/Images/chill.png');
+    background-size: cover;
+    position: absolute;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Searchbar */
+.act-drop {
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(rgba(137, 43, 226, 1), rgba(137, 43, 226, 0.1));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.searchbarbox {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: rgba(158, 70, 230, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.searchbarbox.animated {
+    animation: dropDown 1s normal forwards;
+}
+#searchbarinput {
+    width: 70%;
+    height: 50%;
+    font-size: 100%;
+    background-color: rgba(24, 100, 150, 0.6);
+    color: black;
+    text-align: center;
+    border: none;
+}
+#src-btn {
+    width: 10%;
+    height: 70%;
+    margin-left: 0.5%;
+    font-size: 100%;
+    background-color: rgba(74, 122, 224, 0.5);
+    color: black;
+    border: none;
+}
+#src-btn:hover {
+    animation: srcBtnHover 0.75s normal;
+}
+
+/* Main box */
+.linksbox {
+    width: 50%;
+    height: 80%;
+    border-width: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: rgba(0, 0, 0, 0.4);
+    border-style: solid;
+    margin: auto;
+    align-self: center;
+}
+#recommended {
+    margin-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-width: 0px;
+    border-bottom: 3px;
+    border-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-style: solid;
+}
+#recommendedlist {
+    margin-top: 5%;
+}
+a {
+    text-decoration: none;
+    color: paleturquoise;
+}
+a.animated {
+    animation: focus 1s 1 normal forwards;
+}
+a.blurred {
+    filter: blur(1px);
+}
+li {
+    margin-left: 10%;
+    padding: 1%;
+    color: black;
+}
+li.animated {
+    animation: breathingEffect 1s infinite alternate;
+}
+
+/* Animations */
+@keyframes srcBtnHover {
+    10% {
+        transform: scale(1.1);
+    }
+    17% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+@keyframes dropDown {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0%;
+    }
+}
+@keyframes breathingEffect {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+@keyframes focus {
+    from {
+        font-size: calc(100%);
+    }
+    to {
+        font-size: calc(100% + 20%);
+    }
+}
