@@ -14,8 +14,6 @@ function search() {
     var filePath = 'Files/Pages/' + input + '.html';
     filePath = filePath.toLowerCase();
 
-    console.log(urlExists(filePath));
-
     if (urlExists(filePath) == true) {
         window.location.href = filePath;
     } else {
