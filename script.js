@@ -3,7 +3,7 @@ var inputBox = document.getElementsByClassName('searchbarinput');
 
 function search() {
     var input = document.getElementById('searchbarinput').value;
-    var filePath = 'https://synkrotic.github.io/Files/Pages/' + input + '.html';
+    var filePath = 'Files/Pages/' + input + '.html';
     filePath = filePath.toLowerCase();
 
     $.ajax({
