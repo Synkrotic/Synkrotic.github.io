@@ -1,22 +1,26 @@
 var box = document.getElementsByClassName('searchbarbox');
 var inputBox = document.getElementsByClassName('searchbarinput');
 
+function urlExists(url)
+{
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    return http.status!=404;
+}
+
 function search() {
     var input = document.getElementById('searchbarinput').value;
     var filePath = 'Files/Pages/' + input + '.html';
     filePath = filePath.toLowerCase();
 
-    $.ajax({
-        type: "HEAD",
-        url: filePath,
-        dataType: "html",
-        success: function (response) {
-            window.location.href = filePath;
-        },
-        error: function (response) {
-            window.location.href = 'Files/Pages/notfnd.html';
-        }
-    });
+    console.log(urlExists(filePath));
+
+    if (urlExists(filePath) == true) {
+        window.location.href = filePath;
+    } else {
+        window.location.href = 'Files/Pages/notfnd.html';
+    };
 };
 
 $(document).ready(function(){
