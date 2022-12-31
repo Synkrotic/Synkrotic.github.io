@@ -12,10 +12,10 @@ function search() {
         dataType: "html",
         success: function (response) {
             window.location.href = filePath;
-        },
-        error: function (response) {
-            window.location.href = 'Files/Pages/notfnd.html';
-        }
+        }//,
+//         error: function (response) {
+//             window.location.href = 'Files/Pages/notfnd.html';
+//         }
     });
 };
 
