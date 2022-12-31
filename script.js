@@ -16,9 +16,9 @@ function search() {
 
     if (urlExists(filePath) == true) {
         window.location.href = filePath;
-    } else {
-        window.location.href = 'Files/Pages/notfnd.html';
-    };
+    }; //else {
+//         window.location.href = 'Files/Pages/notfnd.html';
+//     };
 };
 
 $(document).ready(function(){
