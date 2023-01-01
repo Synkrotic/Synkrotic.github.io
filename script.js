@@ -6,7 +6,7 @@ function search() {
     var filePath = 'Files/Pages/' + input + '.html';
     filePath = filePath.toLowerCase();
 
-    
+    alert('Helaas werkt de zoekbalk niet op github pages waar deze website op is gehost!');
 };
 
 $(document).ready(function(){
