@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WikiNow</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<script src="jquery-3.6.3.js"></script>
+	</head>
+	<body>
+		<div id="bg"></div>
+		<main>
+			<section class="main-page">
+				<div class="container">
+					<div class="act-drop">
+						<div class="searchbarbox">
+							<input placeholder="Zoek hier..." type="search" name="searchbar" id="searchbarinput">
+							<button onclick="search()" id="src-btn">Zoeken</button>
+						</div>
+					</div>
+					<div class="mainbox">
+						<p id="recommended"> ~ ~ ~ ~ ~ <b>Aanbevolen</b> ~ ~ ~ ~ ~ </p>
+						<nav id="inside-box">
+							<ul id="recommendedlist">
+								<li class="animated"><a href="Files/Pages/template.html">Template</a></li>
+								<li class="animated"><a href="Files/Pages/notfnd.html">404 Error</a></li>
+							</ul>
+							<div id="posbtns">
+								<nav id="buttonbox">
+									<button onclick="actions(true, 'bewerk een pagina')" class="btn" id="edit">Bewerk een<br>pagina</button>
+									<button onclick="actions(true, 'verwijder een pagina')" class="btn" id="remove">Verwijder een<br>pagina</button>
+									<button onclick="actions(true, 'creëer een pagina')" class="btn" id="create">Creëer een<br>pagina</button>
+								</nav>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</section>
+			<section class="actions-page">
+				<div id="actions-box">
+					<div id="actions-topbar">
+						<div class="actions-topbar-item" id="actions-icon-holder"><img alt="Logo" src="Files/Images/wrench.png" id="actions-topbar-icon"></div>
+						<div class="actions-topbar-item" id="actions-about-holder"><p id="actions-about">onderwerp</p></div>
+						<div class="actions-topbar-item" id="actionsquit-holder">
+							<button onclick="actions(false, 'quit')" id="actionsquit">X</button>
+						</div>
+					</div>
+					<div id="actions-middlebox">
+						<div id="actions-edit-form">
+							<div class="actions-edit-item-holder">
+								<label class="actions-edit-formlabel">Vul A.U.B. hier de naam van de pagina in die u wilt veranderen:<br></label>
+								<input id="actions-getpagename-1" class="actions-edit-forminput" placeholder="Vul hier in...">
+							</div>
+							<div class="actions-edit-item-holder doubleheight">
+								<label class="actions-edit-formlabel">Verander hier de text zoals u wilt: <br></label>
+								<textarea title="edittext" id="actions-pagetext-1" class="actions-edit-forminput textarea" maxlength="2000"></textarea>
+							</div>
+						</div>
+						<div id="actions-remove-form">
+							<div class="actions-remove-item-holder">
+								<label class="actions-remove-formlabel">Vul A.U.B. hier de aan van de pagina in die u wilt verwijderen:<br></label>
+								<input id="actions-getpagename-2" class="actions-remove-forminput" placeholder="Vul hier in...">
+							</div>
+						</div>
+						<div id="actions-create-form">
+							<div class="actions-create-item-holder">
+								<label class="actions-create-formlabel">Vul A.U.B. hier een unieke naam/onderwerp van de pagina die u wilt creëren:<br></label>
+								<input id="actions-getpagename-3" class="actions-create-forminput" placeholder="Vul hier in...">
+							</div>
+							<div class="actions-create-item-holder doubleheight">
+								<label class="actions-create-formlabel">Typ hier de text die u wilt plaatsen: <br></label>
+								<textarea title="createtext" id="actions-pagetext-2" class="actions-create-forminput textarea" maxlength="2000"></textarea>
+							</div>
+						</div>
+					</div>
+					<div id="actions-bottombar">
+						<div class="actions-bottombar-item"><button onclick="actions(false, 'quit')" id="actions-cancel" class="actions-bottombar-btn">Annuleren</button></div>
+						<div class="actions-bottombar-item"><button onclick="save()" id="actions-save" class="actions-bottombar-btn">Opslaan</button></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
