@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" type="image/png" href="Resources/Media/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <title>Homepage</title>
+</head>
+<body>
+    <img src="Resources/Media/background.png" alt="" draggable="false" id="bg">
+    <img id="logo" src="Resources/Media/logo.png" alt="">
+    <div id="info-boxes">
+        <div id="sort">
+            <button onclick="goto('https://discord.com/invite/EHhpYQR35q')" type="button" class="info-box" id="box-discord">Discord<br><span class="small-explanation">A direct link to our community discord!<br>⠀</span></button>
+            <button onclick="switchGeneral('open')" type="button" class="info-box" id="box-general">General<br><span class="small-explanation" id="open-general">All the general information you need about the server!</span></button>
+            <button onclick="goto('https://cozydupe.tebex.io/')" type="button" class="info-box" id="box-store">Store<br><span class="small-explanation">All information about our purchasable items!<br></span></button>
+        </div>
+    </div>
+    <div id="general-page">
+        <div id="general-info">
+            <p id="big-general">General</p>
+            <div class="general-text">
+                <p class="center-text"><br>
+                    CozyDupe is a custom-coded LifeSteal Dupe server.<br>
+                    It was created by CreaCheetah and Garbos in January 2023.<br>
+                    It features a professionally built spawn,<br>
+                    a beautiful warzone (with build disabled), and a 10kx10k survival world.<br>
+                    Our server operates on a seasonal system!<br>
+                    At the end of each season, the top players and top teams are rewarded payouts.<br>
+                    The top players are ranked by kills and the top teams are ranked by KOTH points.<br>
+                    KOTH is a capturable point in the warzone, that gives the team leader 1 point every 5 minutes. 
+                    Players can also create teams and play together.<br>
+                    <br>
+                    Useful Commands:<br>
+                </p>
+                <ul>
+                    <li>&ensp;&gt;&ensp;/rtp&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[This teleports you to a random location.]</li>
+                    <li>&ensp;&gt;&ensp;/afk&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; [This teleports you to the afk area.]</li>
+                    <li>&ensp;&gt;&ensp;/warp Crates&emsp;&emsp;&ensp; [This teleports you to the crates area.]</li>
+                    <li>&ensp;&gt;&ensp;/warp KOTH&emsp;&emsp;&emsp;[This teleports you near KOTH.]</li>
+                    <li>&ensp;&gt;&ensp;/team&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[This lets you create/manage/view a team.]</li>
+                </ul>
+                <p class="center-text"><span class="subject-text">LifeSteal</span><br>
+                    Our server is a lifesteal server!<br>
+                    This means that you gain 1 heart per kill and lost 1 heart per death.<br>
+                    Upon losing all of your hearts, you get deathbanned for 6 hours and regain 10 hearts.<br>
+                    You can gain hearts in different ways:<br>
+                </p>
+                <ul>
+                    <li>&ensp;&gt;&ensp;Killing other players.</li>
+                    <li>&ensp;&gt;&ensp;Selling items to others using our auctionhouse.</li>
+                    <li>&ensp;&gt;&ensp;Doing quests.</li>
+                </ul>
+                <p class="center-text">
+                    You can have up to 100 hearts.<br>
+                    Each heart you gain after reaching 100 hearts gets deposited to your heartbank!<br>
+                    Your heartbank stores your extra hearts and provides a damage boosts that increases the more hearts you get.
+                    <br>
+                    Useful commands:<br>
+                </p>
+                <ul>
+                  <li>&ensp;&gt;&ensp;/auctionhouse&emsp;&emsp;&emsp;&ensp; [This allows you to buy items from others.]</li>
+                  <li>&ensp;&gt;&ensp;/heartbank&emsp;&emsp;&emsp;&emsp;&emsp; [This is where your extra hearts go.]</li>
+                  <li>&ensp;&gt;&ensp;/withdraw &lt;number&gt;&emsp;[This is used to get hearts from your bank.]</li>
+                  <li>&ensp;&gt;&ensp;/deposit &lt;number&gt;&emsp;&ensp; [This is used to put hearts into your bank.]</li>
+                </ul>
+                <p class="center-text"><span class="subject-text">Dupe</span><br>
+                    Our server is a dupe server!<br>
+                    This means that you can dupe any item except for certain special ones.<br>
+                    You can buy some undupable items from the shops.<br>
+                    You gain 1 playtime point each minute to spend in the playtime shop.<br>
+                    To get KOTH points, you must capture KOTH.<br>
+                    Shops: Heart Shop, Playtime Shop, KOTH Shop<br>
+                    <br>
+                    Useful Commands:<br>
+                </p>
+                <ul>
+                    <li>&ensp;&gt;&ensp;/dupe&emsp;&emsp;[This dupes your held item.]</li>
+                    <li>&ensp;&gt;&ensp;/shop&emsp;&emsp;[This opens the shop selector.]</li>
+                </ul>
+                <p class="center-text"><span class="subject-text">Miscellaneous</span><br>
+                    You can find a number of unique features on our server!<br>
+                </p>
+                <ul>
+                    <li>&ensp;&gt;&ensp;<u>Artifacts</u> grant the user special buffs and can be obtained by killing Selene. You can only use one at a time. They are very rare.</li>
+                    <li>&ensp;&gt;&ensp;<u>Selene</u> is a boss that spawns every 6 hours in the warzone. She drops an artifact box. It is not recommended fighting her unless you have 50+ hearts.</li>
+                    <li>&ensp;&gt;&ensp;<u>Bounties</u> can be placed using the command and obtained by killing a player with a bounty.</li>
+                    <li>&ensp;&gt;&ensp;<u>Quests</u> can be found around spawn/warzone. They can be completed once every few days and reward players with keys and hearts.</li>
+                    <li>&ensp;&gt;&ensp;<u>PVP Items</u> spice up PVP. They can be seen and obtained from the item crate at spawn.</li>
+                </ul>
+                    <br>
+                <p class="center-text">
+                    <br>
+                    Useful Commands:<br>
+                </p>
+                <ul>
+                    <li>&ensp;&gt;&ensp;/artifact&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; [This allows you to select an artifact.]</li>
+                    <li>&ensp;&gt;&ensp;/bounty&lt;player&gt; &lt;number&gt;&emsp;&emsp;[This places a bounty on a player.]</li>
+                    <li>&ensp;&gt;&ensp;/bounties&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[This shows you all bounties]</li>
+                </ul>
+            </div>
+        </div>
+        <button onclick="switchGeneral('close')" type="button" id="close-button"></button>
+    </div>
+</body>
+</html>

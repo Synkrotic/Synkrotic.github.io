@@ -1,0 +1,222 @@
+/* Main setup */
+:root {
+    --lowblack: #00000055;
+    --generalLoc: -100vh;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    overflow-y: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+#bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* Logo */
+#logo {
+    margin-top: 1%;
+    height: 35%;
+    position: absolute;
+}
+
+/* Info boxes setup */
+#info-boxes {
+    align-self: flex-end;
+    height: 70%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    z-index: 2;
+    margin-bottom: 1%;
+}
+.info-box {
+    height: 60%;
+    width: calc(80% / 3);
+    outline: none;
+    border: none;
+    background-color: var(--lowblack);
+    border-radius: 15%;
+    color: white;
+    font-size: 300%;
+    box-shadow: 0 0 30px #ffffffff;
+    padding: 1%;
+    background-size: cover;
+    background-position: center;
+    opacity: 65%;
+    cursor: pointer;
+}
+.info-box.blur { filter: blur(3px); }
+.info-box:hover {
+    animation-name: infobtn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.info-box:hover span {
+    opacity: 70%;
+    transition: 0.5s;
+}
+
+/* Small info in the boxes */
+.small-explanation {
+    padding-top: 3.5%;
+    font-size: 40%;
+    opacity: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Better spacing of the boxes */
+#sort {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#box-discord { background-image: url(Resources/Media/discord.png); }
+#box-general { background-image: url(Resources/Media/lifesteal.png); }
+#box-store { background-image: url(Resources/Media/store.png); }
+
+/* General info page */
+#general-page {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: #000000aa;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    top: -100%;
+}
+
+#general-info {
+    height: 100%;
+    width: 45%;
+    background-color: #000000ee;
+    border-radius: 1rem;
+    outline: 3px solid black;
+    overflow-y: scroll;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: start;
+}
+#big-general {
+    height: 10%;
+    width: 100%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 500%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-shadow: 5px 5px 10px rgb(233, 120, 14), 2.5px 2.5px 5px rgb(255, 255, 255), 0px 0px 2.5px rgb(233, 120, 14);
+}
+.general-text {
+    width: 100%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 120%;
+    margin-bottom: 10%;
+}
+#close-button {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    height: 3vh;
+    width: 3vh;
+    outline: none;
+    border: none;
+    background-color: var(--lowblack);
+    background-image: url(Resources/Media/x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15%;
+    color: white;
+    font-size: 300%;
+    box-shadow: 0 0 30px #ffffffff;
+    padding: 1%;
+    background-size: cover;
+    background-position: center;
+    opacity: 65%;
+    cursor: pointer;
+}
+
+/* Images and changes to text */
+.subject-text {
+    margin-top: 7.5%;
+    width: 100%;
+    font-size: 200%;
+    text-shadow: 0 0 10px #ffffffff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center-text {
+    width: 100%;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes infobtn {
+    from {
+        transform: scale(100%);
+    } to {
+        transform: scale(130%);
+    }
+}
+
+@keyframes generalInfoSizing {
+    0% {
+        top: -50%;
+        transform: scaleY(0);
+        opacity: 0%;
+    } 70% {
+        opacity: 100%;
+    } 100% {
+        top: 0%;
+        transform: scaleY(1);
+    }
+}
