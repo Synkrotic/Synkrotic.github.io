@@ -1,0 +1,80 @@
+Zaterdag 24 december
+	6 uur bezig.
+	HTML maken.
+	Daaraan de CSS linken.
+	En de JavaScript en dus Jquery.
+	Homepage in grote lijnen gemaakt.
+	Dus flexbox en achtergrond en de style van de flexbox.
+	Ook al een begin aan de zoekbalk.
+
+Zondag 25 december
+	1 uur bezig.
+	Zoekbalk afgemaakt.
+
+Maandag 26 december
+	5 uur bezig.
+	Jquery leren te gebruiken.
+	Animatie van de zoekbalk gemaakt.
+
+Dinsdag 27 december
+	7 uur bezig.
+	Jquery gebruikt voor animate over links.
+	en de eerste versie van JavaScript van de zoekbalk.
+
+Woensdag 28 december
+	2 uur bezig.
+	Code netter gemaakt en een paar variables verwerkt in mijn CSS.
+
+Donderdag 29 december
+	2 uur bezig.
+	Na uitgevonden te hebben dat zoekbalk 1 niet werkte,
+	maakte ik een tweede versie.
+
+Vrijdag 30 december
+	7 uur bezig.
+	Betere flexboxes maken en beter posities voor divs.
+	Ook kleuren overgangen toegevoegd aan achtergrond en bepaalde divs,
+	verder nog andere CSS verbeteringen toegevoegd.
+
+Zaterdag 31 december
+	6 uur bezig.
+	Versie drie proberen te maken van de zoekbalk.
+	Een paar test pagina's maken.
+
+Zondag 1 januari
+	6 uur bezig.
+	De automatie van de naamgeving van onderwerp pagina's.
+	De homepage box helemaal opnieuw gemaakt voor een verbeterde positionering.
+	En de knoppen toegevoegd op de homepage.
+
+Woensdag 4 januari
+	8 uur bezig.
+	Een animatie gemaakt voor de knoppen.
+	En de functionaliteit gemaakt in Jquery.
+	En de witte div voor alle knoppen gemaakt.
+	Hier ook nog een animatie voor gemaakt.
+
+Donderdag 5 januari
+	3 uur bezig.
+	De input en textarea toegevoegd en gestyled voor de 'Verander' knop.
+
+Zaterdag 7 januari
+	4 uur bezig.
+	De input voor de creëer en verwijder pagina's en de textarea voor de creëer pagina.
+
+Zondag 8 januari
+	3 uur bezig.
+	JavaScript errors weg halen.
+	De zoekbalk functie verwijderen voor toekomstige database.
+	Zorgen dat alle labels, inputs en textarea's goed zijn gelinkt.
+	En dat alle labels, inputs en textarea's in een form zitten.
+
+Donderdag 12 januari
+	3 uur bezig.
+	XAMPP, MySQL workbench installeren.
+	De database maken en opzetten.
+
+Vrijdag 13 januari
+	3 uur bezig.
+	Database gekoppeld aan website.
+
